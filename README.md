@@ -1,7 +1,7 @@
 # IME Unfreeze (ChatGPT / Claude)
 
-Tiny private Chrome extension that stops ChatGPT and Claude from freezing
-for 20-90 seconds the first time you type CJK input via an IME on macOS.
+Tiny Chrome extension that stops ChatGPT and Claude from freezing for
+20-90 seconds the first time you type CJK input via an IME on macOS.
 
 ## What it does
 
@@ -42,3 +42,8 @@ this extension off in `chrome://extensions/` and reload the tab.
   `run_at: "document_start"`, `all_frames: true`
 - `block.js` — installs the stub, preserves prototype + static methods
   for `instanceof` and feature detection
+
+## Releases
+
+See the [Releases page](https://github.com/MoonQiu1342/ime-unfreeze/releases)
+for version history.
