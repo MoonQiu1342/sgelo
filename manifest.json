@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "IME Unfreeze (ChatGPT/Claude)",
+  "version": "0.1.0",
+  "description": "Stub out eager RTCPeerConnection on ChatGPT and Claude to stop CJK IME composition from freezing the page for 20-90s. Disable if you need voice mode.",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chatgpt.com/*",
+        "https://chat.openai.com/*",
+        "https://claude.ai/*"
+      ],
+      "js": ["block.js"],
+      "run_at": "document_start",
+      "world": "MAIN",
+      "all_frames": true
+    }
+  ]
+}
