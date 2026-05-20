@@ -1,4 +1,6 @@
-# IME Unfreeze (ChatGPT / Claude)
+# Sgelo
+
+> Italian for "thaw / defrost" — it unfreezes a frozen input.
 
 A tiny Chrome extension that stops ChatGPT and Claude from freezing the
 page for **20-90 seconds** the first time you start a CJK (Chinese /

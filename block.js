@@ -1,4 +1,4 @@
-// IME Unfreeze — runs in the MAIN page world at document_start.
+// Sgelo (IME unfreeze) — runs in the MAIN page world at document_start.
 //
 // Why: ChatGPT (and Claude) eagerly construct an RTCPeerConnection during
 // early page life — likely a voice-mode warm-up. On macOS this can block the

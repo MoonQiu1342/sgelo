@@ -1,10 +1,10 @@
 {
   "manifest_version": 3,
-  "name": "IME Unfreeze (ChatGPT/Claude)",
-  "version": "0.1.0",
-  "description": "Stub out eager RTCPeerConnection on ChatGPT and Claude to stop CJK IME composition from freezing the page for 20-90s. Disable if you need voice mode.",
+  "name": "Sgelo",
+  "version": "0.1.1",
+  "description": "Sgelo — stubs out eager RTCPeerConnection on ChatGPT and Claude to stop CJK IME composition from freezing the page for 20-90s. Disable if you need voice mode.",
   "action": {
-    "default_title": "IME Unfreeze",
+    "default_title": "Sgelo (IME unfreeze for ChatGPT/Claude)",
     "default_icon": {
       "16": "icons/16.png",
       "48": "icons/48.png",
