@@ -23,12 +23,12 @@ this fixes it.
 - Fix: replace `RTCPeerConnection` with a no-op stub before any site
   code runs. Text chat works normally; voice mode does not.
 
-Profile evidence (captured with [sotto-debugger]): `RTCPeerConnection`
+Profile evidence (captured with [sentinella]): `RTCPeerConnection`
 appearing as the #1 self-time function with 9.3s during a 23s freeze
 (and 86s during a worse one). With the stub installed, the freeze
 disappears entirely.
 
-[sotto-debugger]: https://github.com/MoonQiu1342/sotto-debugger
+[sentinella]: https://github.com/MoonQiu1342/sentinella
 
 ## Who needs this
 
@@ -59,14 +59,14 @@ Load it unpacked:
 Open DevTools console on chatgpt.com or claude.ai. You should see:
 
 ```
-[ime-unfreeze] installed on chatgpt.com
+[sgelo] installed on chatgpt.com
 ```
 
 The first few times the site tries to construct an
 `RTCPeerConnection`, you'll also see:
 
 ```
-[ime-unfreeze] RTCPeerConnection stubbed (#1) on chatgpt.com — disable this extension if you need voice mode
+[sgelo] RTCPeerConnection stubbed (#1) on chatgpt.com — disable this extension if you need voice mode
 ```
 
 That warning is the extension doing its job. After three stubs it goes
@@ -117,7 +117,7 @@ native WebRTC init that was blocking the main thread.
 
 ## Releases
 
-See [Releases](https://github.com/MoonQiu1342/ime-unfreeze/releases)
+See [Releases](https://github.com/MoonQiu1342/sgelo/releases)
 for version history.
 
 ## License
